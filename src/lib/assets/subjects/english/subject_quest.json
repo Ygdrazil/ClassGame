@@ -1,0 +1,770 @@
+{
+	"quest": [
+		{
+			"id": 0,
+			"type": "dialog",
+			"character_id": 0,
+			"text": "Ouah, t'a pas froid au yeux toi! ",
+
+			"next_dialog": 1
+		},
+		{
+			"id": 1,
+			"type": "dialog",
+			"character_id": 2,
+			"text": "A plus tard Agrid ",
+
+			"next_dialog": 2
+		},
+		{
+			"id": 2,
+			"type": "choice",
+            "character_id": 1,
+			"text": "Hello everybody, today we will begin with the vocabulary about ",
+			"choices": [
+				{
+					"text": "usefull tools",
+					"next_dialog": 14
+				},
+				{
+					"text": "conputer science",
+					"next_dialog": 25
+				},
+				{
+					"text": "animals",
+					"next_dialog": 3
+				}
+			]
+		},
+		{
+			"id": 3,
+			"type": "question",
+            "character_id": 1,
+			"text": "What is the animal that jump and live in Australia ?",
+			"correct_answer": 3,
+			"choices": [
+				{
+					"text": "Kengaroo",
+					"next_dialog": 4
+				},
+				{
+					"text": "Kangoroo",
+					"next_dialog": 4
+				},
+				{
+					"text": "Kenguru",
+					"next_dialog": 4
+				},
+				{
+					"text": "Kangaroo",
+					"next_dialog": 4
+				}
+			]
+		},
+		{
+			"id": 4,
+			"type": "question",
+            "character_id": 1,
+			"text": "Which is the best friend of all humans ?",
+			"correct_answer": 0,
+			"choices": [
+				{
+					"text": "Dog",
+					"next_dialog": 5
+				},
+				{
+					"text": "Doog",
+					"next_dialog": 5
+				},
+				{
+					"text": "Dug",
+					"next_dialog": 5
+				},
+				{
+					"text": "Deug",
+					"next_dialog": 5
+				}
+			]
+		},
+		{
+			"id": 5,
+			"type": "question",
+            "character_id": 1,
+			"text": "Which animal produce milk to drink ?",
+			"correct_answer":2 ,
+			"choices": [
+				{
+					"text": "Co",
+					"next_dialog": 6
+				},
+				{
+					"text": "Caw",
+					"next_dialog": 6
+				},
+				{
+					"text": "Cow",
+					"next_dialog": 6
+				},
+				{
+					"text": "Coow",
+					"next_dialog": 6
+				}
+			]
+		},
+		{
+			"id": 6,
+			"type": "question",
+            "character_id": 1,
+			"text": "Which animal is eaten on Thanksgiving ?",
+			"correct_answer": 0,
+			"choices": [
+				{
+					"text": "Turkey",
+					"next_dialog": 7
+				},
+				{
+					"text": "Turkee",
+					"next_dialog": 7
+				},
+				{
+					"text": "Turk",
+					"next_dialog": 7
+				},
+				{
+					"text": "Turky",
+					"next_dialog": 7
+				}
+			]
+		},
+		{
+			"id": 7,
+			"type": "question",
+            "character_id": 1,
+			"text": "Which animal produce eggs ?",
+			"correct_answer":4 ,
+			"choices": [
+				{
+					"text": "Henn",
+					"next_dialog": 8
+				},
+				{
+					"text": "Hann",
+					"next_dialog": 8
+				},
+				{
+					"text": "Han",
+					"next_dialog": 8
+				},
+				{
+					"text": "Hen",
+					"next_dialog": 8
+				}
+			]
+		},
+		{
+			"id": 8,
+			"type": "question",
+            "character_id": 1,
+			"text": "Which animal does \"coin coin\" ?",
+			"correct_answer": 1 ,
+			"choices": [
+				{
+					"text": "Duk",
+					"next_dialog": 9
+				},
+				{
+					"text": "Duck",
+					"next_dialog": 9
+				},
+				{
+					"text": "Duc",
+					"next_dialog": 9
+				},
+				{
+					"text": "Deck",
+					"next_dialog": 9
+				}
+			]
+		},
+		{
+			"id": 9,
+			"type": "question",
+            "character_id": 1,
+			"text": "Which animal likes carrots ?",
+			"correct_answer": 0,
+			"choices": [
+				{
+					"text": "Rabbit",
+					"next_dialog": 10
+				},
+				{
+					"text": "Rabeet",
+					"next_dialog": 10
+				},
+				{
+					"text": "Robit",
+					"next_dialog": 10
+				},
+				{
+					"text": "Robeet",
+					"next_dialog": 10
+				}
+			]
+		},
+		{
+			"id": 10,
+			"type": "question",
+            "character_id": 1,
+			"text": "Which animal has quills on his back ?",
+			"correct_answer": 1 ,
+			"choices": [
+				{
+					"text": "Edgehog",
+					"next_dialog": 11
+				},
+				{
+					"text": "Hedgehog",
+					"next_dialog": 11
+				},
+				{
+					"text": "Hedgehogg",
+					"next_dialog": 11
+				},
+				{
+					"text": "Hedgahog",
+					"next_dialog": 11
+				}
+			]
+		},
+		{
+			"id": 11,
+			"type": "question",
+            "character_id": 1,
+			"text": "Which animal eat Eucalyptus ?",
+			"correct_answer":1 ,
+			"choices": [
+				{
+					"text": "Koola",
+					"next_dialog": 12
+				},
+				{
+					"text": "Koala",
+					"next_dialog": 12
+				},
+				{
+					"text": "Kaloa",
+					"next_dialog": 12
+				},
+				{
+					"text": "Kola",
+					"next_dialog": 12
+				}
+			]
+		},
+		{
+			"id": 12,
+			"type": "question",
+            "character_id": 1,
+			"text": "Which one is the king of the animals ?",
+			"correct_answer": 2,
+			"choices": [
+				{
+					"text": "Loon",
+					"next_dialog": 13
+				},
+				{
+					"text": "Linn",
+					"next_dialog": 13
+				},
+				{
+					"text": "Lion",
+					"next_dialog": 13
+				},
+				{
+					"text": "Lino",
+					"next_dialog": 13
+				}
+			]
+		}
+		,
+		{
+			"id": 13,
+			"type": "question",
+            "character_id": 1,
+			"text": "Which one live in swamps ?",
+			"correct_answer": 2,
+			"choices": [
+				{
+					"text": "Aligetor",
+					"next_dialog": 31
+				},
+				{
+					"text": "Aligatoor",
+					"next_dialog":31
+				},
+				{
+					"text": "Aligator",
+					"next_dialog": 31
+				},
+				{
+					"text": "Alligator",
+					"next_dialog": 31
+				}
+			]
+		},
+		{
+			"id": 14,
+			"type": "question",
+            "character_id": 1,
+			"text": "What do you use to hang a paper on the wall ?",
+			"correct_answer":2 ,
+			"choices": [
+				{
+					"text": "Selotape",
+					"next_dialog": 15
+				},
+				{
+					"text": "Seelotape",
+					"next_dialog": 15
+				},
+				{
+					"text": "Sellotape",
+					"next_dialog": 15
+				},
+				{
+					"text": "Sellotap",
+					"next_dialog": 15
+				}
+			]
+		}
+		,
+		{
+			"id": 15,
+			"type": "question",
+            "character_id": 1,
+			"text": "What do you use to put your documents in ?",
+			"correct_answer":1 ,
+			"choices": [
+				{
+					"text": "Bander",
+					"next_dialog": 16
+				},
+				{
+					"text": "Binder",
+					"next_dialog": 16
+				},
+				{
+					"text": "Bindeer",
+					"next_dialog": 16
+				},
+				{
+					"text": "Bandeer",
+					"next_dialog": 16
+				}
+			]
+		},
+		{
+			"id": 16,
+			"type": "question",
+            "character_id": 1,
+			"text": "What do you use to delete what you wrote wrong ?",
+			"correct_answer":1 ,
+			"choices": [
+				{
+					"text": "Heraser",
+					"next_dialog": 17
+				},
+				{
+					"text": "Eraser",
+					"next_dialog": 17
+				},
+				{
+					"text": "Heraseer",
+					"next_dialog": 17
+				},
+				{
+					"text": "Eraseer",
+					"next_dialog": 17
+				}
+			]
+		},
+		{
+			"id": 17,
+			"type": "question",
+            "character_id": 1,
+			"text": "What is used to measure ?",
+			"correct_answer": 3,
+			"choices": [
+				{
+					"text": "Rouler",
+					"next_dialog": 18
+				},
+				{
+					"text": "Rule",
+					"next_dialog": 18
+				},
+				{
+					"text": "Roule",
+					"next_dialog": 18
+				},
+				{
+					"text": "Ruler",
+					"next_dialog": 18
+				}
+			]
+		},
+		{
+			"id": 18,
+			"type": "question",
+            "character_id": 1,
+			"text": "What is used to program code ?",
+			"correct_answer":0 ,
+			"choices": [
+				{
+					"text": "Computer",
+					"next_dialog": 19
+				},
+				{
+					"text": "Coputer",
+					"next_dialog": 19
+				},
+				{
+					"text": "Computter",
+					"next_dialog": 19
+				},
+				{
+					"text": "Coputter",
+					"next_dialog": 19
+				}
+			]
+		},
+		{
+			"id": 19,
+			"type": "question",
+            "character_id": 1,
+			"text": "Where does the teacher write on class ?",
+			"correct_answer":3 ,
+			"choices": [
+				{
+					"text": "Witeboard",
+					"next_dialog": 20
+				},
+				{
+					"text": "Whiteboad",
+					"next_dialog": 20
+				},
+				{
+					"text": "Whiboad",
+					"next_dialog": 20
+				},
+				{
+					"text": "Whiteboard",
+					"next_dialog": 20
+				}
+			]
+		},
+		{
+			"id": 20,
+			"type": "question",
+            "character_id": 1,
+			"text": "What do you use to seat ?",
+			"correct_answer":0 ,
+			"choices": [
+				{
+					"text": "Chair",
+					"next_dialog": 21
+				},
+				{
+					"text": "Seater",
+					"next_dialog": 21
+				},
+				{
+					"text": "Char",
+					"next_dialog": 21
+				},
+				{
+					"text": "Cheer",
+					"next_dialog": 21
+				}
+			]
+		},
+		{
+			"id": 21,
+			"type": "question",
+            "character_id": 1,
+			"text": "What do you use to write notes ?",
+			"correct_answer": 2,
+			"choices": [
+				{
+					"text": "Notebok",
+					"next_dialog": 22
+				},
+				{
+					"text": "Noteebook",
+					"next_dialog": 22
+				},
+				{
+					"text": "Notebook",
+					"next_dialog": 22
+				},
+				{
+					"text": "Noptebok",
+					"next_dialog": 22
+				}
+			]
+		},
+		{
+			"id": 22,
+			"type": "question",
+            "character_id": 1,
+			"text": "Wich is the book used to check the correct spelling of a word ?",
+			"correct_answer":3 ,
+			"choices": [
+				{
+					"text": "Ditionary",
+					"next_dialog": 23
+				},
+				{
+					"text": "Dictoonary",
+					"next_dialog": 23
+				},
+				{
+					"text": "Dictionar",
+					"next_dialog": 23
+				},
+				{
+					"text": "Dictionary",
+					"next_dialog": 23
+				}
+			]
+		},
+		{
+			"id": 23,
+			"type": "question",
+            "character_id": 1,
+			"text": "Who is the person learning you things in class ?",
+			"correct_answer":1 ,
+			"choices": [
+				{
+					"text": "Tacher",
+					"next_dialog": 24
+				},
+				{
+					"text": "Teacher",
+					"next_dialog": 24
+				},
+				{
+					"text": "Teecher",
+					"next_dialog": 24
+				},
+				{
+					"text": "Teacheer",
+					"next_dialog": 24
+				}
+			]
+		},
+		{
+			"id": 24,
+			"type": "question",
+            "character_id": 1,
+			"text": "What must you do when you come back from shcool ?",
+			"correct_answer":0 ,
+			"choices": [
+				{
+					"text": "Homework",
+					"next_dialog": 31
+				},
+				{
+					"text": "Omework",
+					"next_dialog": 31
+				},
+				{
+					"text": "Omewoork",
+					"next_dialog": 31
+				},
+				{
+					"text": "Homwork",
+					"next_dialog": 31
+				}
+			]
+		},
+		{
+			"id": 25,
+			"type": "question",
+            "character_id": 1,
+			"text": "What is used to work in ?",
+			"correct_answer":0 ,
+			"choices": [
+				{
+					"text": "Desktop",
+					"next_dialog": 26
+				},
+				{
+					"text": "Destop",
+					"next_dialog": 26
+				},
+				{
+					"text": "Deskop",
+					"next_dialog": 26
+				},
+				{
+					"text": "Dektop",
+					"next_dialog": 26
+				}
+			]
+		},
+		{
+			"id": 26,
+			"type": "question",
+            "character_id": 1,
+			"text": "What is a repertory that could contain various types of files ?",
+			"correct_answer":0 ,
+			"choices": [
+				{
+					"text": "Folder",
+					"next_dialog": 27
+				},
+				{
+					"text": "Foolder",
+					"next_dialog": 27
+				},
+				{
+					"text": "Foldeer",
+					"next_dialog": 27
+				},
+				{
+					"text": "Fooldeer",
+					"next_dialog": 27
+				}
+			]
+		},
+		{
+			"id": 27,
+			"type": "question",
+            "character_id": 1,
+			"text": "On a computer what do you save ?",
+			"correct_answer":1 ,
+			"choices": [
+				{
+					"text": "Fyle",
+					"next_dialog": 28
+				},
+				{
+					"text": "File",
+					"next_dialog": 28
+				},
+				{
+					"text": "Fylle",
+					"next_dialog": 28
+				},
+				{
+					"text": "File",
+					"next_dialog": 28
+				}
+			]
+		},
+		{
+			"id": 28,
+			"type": "question",
+            "character_id": 1,
+			"text": "Which is the person that produce code ?",
+			"correct_answer":3 ,
+			"choices": [
+				{
+					"text": "Programer",
+					"next_dialog": 29
+				},
+				{
+					"text": "Proogramer",
+					"next_dialog": 29
+				},
+				{
+					"text": "Progamer",
+					"next_dialog": 29
+				},
+				{
+					"text": "Programmer",
+					"next_dialog": 29
+				}
+			]
+		},
+		{
+			"id": 29,
+			"type": "question",
+            "character_id": 1,
+			"text": "What is used to protect an account ?",
+			"correct_answer":1 ,
+			"choices": [
+				{
+					"text": "Pasword",
+					"next_dialog": 30
+				},
+				{
+					"text": "Password",
+					"next_dialog": 30
+				},
+				{
+					"text": "Paswod",
+					"next_dialog": 30
+				},
+				{
+					"text": "Paswood",
+					"next_dialog": 30
+				}
+			]
+		},
+		{
+			"id": 30,
+			"type": "question",
+            "character_id": 1,
+			"text": "What is thedevice to transfer files without using emails ?",
+			"correct_answer":2 ,
+			"choices": [
+				{
+					"text": "USB Steek",
+					"next_dialog": 31
+				},
+				{
+					"text": "USB Kee",
+					"next_dialog": 31
+				},
+				{
+					"text": "USB Key",
+					"next_dialog": 31
+				},
+				{
+					"text": "USB Stik",
+					"next_dialog": 31
+				}
+			]
+		},
+		{
+			"id": 31,
+			"type": "dialog",
+            "character_id": 1,
+			"text": "Well done for today! See you in the next class !",
+			"next_dialog": 32
+		},
+        {
+            "id": 32,
+            "type": "end"
+        }
+	],
+    "characters": [
+        {
+            "id": 0,
+			"image": "jane.png",
+            "name": "Agrid"
+        },
+        {
+            "id": 1,
+			"image": "miss_miss.jpg",
+            "name": "Miss Smith"
+        },
+		{
+            "id": 2,
+			"image": "matisse.png",
+            "name": "Toi"
+        }
+    ]
+}

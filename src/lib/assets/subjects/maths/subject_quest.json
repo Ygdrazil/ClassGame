@@ -1,0 +1,75 @@
+{
+	"quest": [
+		{
+			"id": 0,
+			"type": "dialog",
+			"character_id": 1,
+			"text": "Hello, welcome to the mathematicas !",
+
+			"next_dialog": 1
+		},
+		{
+			"id": 1,
+			"type": "choice",
+            "character_id": 1,
+			"text": "What do you want to do?",
+			"choices": [
+				{
+					"text": "Go to dialog 3",
+					"next_dialog": 2
+				},
+				{
+					"text": "Go to dialog 4 (but it's really dialog 3)",
+					"next_dialog": 2
+				}
+			]
+		},
+		{
+			"id": 2,
+			"type": "question",
+            "character_id": 1,
+			"text": "What's your name?",
+			"correct_answer": 0,
+			"choices": [
+				{
+					"text": "Voldimou",
+					"next_dialog": 4
+				},
+				{
+					"text": "Jane",
+					"next_dialog": 3
+				}
+			]
+		},
+		{
+			"id": 3,
+			"type": "dialog",
+            "character_id": 0,
+			"text": "You donkey, I'm Jane!",
+			"next_dialog": 4
+		},
+		{
+			"id": 4,
+			"type": "dialog",
+            "character_id": 1,
+			"text": "Okay... So Voldimou it is...",
+			"next_dialog": 5
+		},
+        {
+            "id": 5,
+            "type": "end"
+        }
+	],
+    "characters": [
+        {
+            "id": 0,
+			"image": "jane.png",
+            "name": "Jane"
+        },
+        {
+            "id": 1,
+			"image": "matisse.png",
+            "name": "Matisse"
+        }
+    ]
+}
