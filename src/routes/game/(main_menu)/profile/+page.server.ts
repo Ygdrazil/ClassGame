@@ -1,6 +1,6 @@
 import { error } from '@sveltejs/kit';
 import type { PageServerLoad } from './$types';
-import { PrismaClient } from '@prisma/client';
+import { prisma } from '$lib/utils/prisma';
 
 export const load = (async ({ parent }) => {
 	const { username } = await parent();
@@ -8,8 +8,6 @@ export const load = (async ({ parent }) => {
 	if (!username) {
 		return error(403, { message: 'You are not logged in' });
 	}
-
-	const prisma = new PrismaClient();
 
 	// get user cards
 	const user = await prisma.user.findUnique({
@@ -27,8 +25,6 @@ export const load = (async ({ parent }) => {
 			username: username
 		}
 	});
-
-	await prisma.$disconnect();
 
 	if (!user) {
 		return error(403, { message: 'You are not logged in' });

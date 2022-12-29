@@ -1,6 +1,6 @@
 import { error, json } from '@sveltejs/kit';
 import type { RequestHandler } from './$types';
-import { PrismaClient } from '@prisma/client';
+import { prisma } from '$lib/utils/prisma';
 
 export const GET = (async ({ url }) => {
 	const searchParam = url.searchParams.get("search");
@@ -17,9 +17,7 @@ export const GET = (async ({ url }) => {
 		queryParams.where = { username: { contains: searchParam } };
 	}
 
-	const prisma = new PrismaClient();
 	const users = await prisma.user.findMany(queryParams);
 
-	await prisma.$disconnect();
 	return json(users);
 }) as RequestHandler;

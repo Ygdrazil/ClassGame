@@ -1,12 +1,11 @@
 import type { Actions } from './$types';
-import { PrismaClient } from '@prisma/client';
+import { prisma } from '$lib/utils/prisma';
 import bcrypt from 'bcrypt';
 import jwt from 'jsonwebtoken';
 import { invalid, redirect } from '@sveltejs/kit';
 
 export const actions: Actions = {
   login: async ({cookies, request}) => {
-    const prisma = new PrismaClient();
 
 	// get form data
     const data = await request.formData();
@@ -15,7 +14,6 @@ export const actions: Actions = {
 
     // check if username and password are undefined
     if(!username || !password) {
-      prisma.$disconnect();
       return invalid(400, { username, password, missing: true });
     }
 
@@ -28,8 +26,6 @@ export const actions: Actions = {
         username: username,
       }
     });
-
-	await prisma.$disconnect();
 
 	// if no user corresponds, return an invalid object
     if(!user) {
@@ -54,7 +50,6 @@ export const actions: Actions = {
     throw redirect(302, '/game/home');
   },
   register: async (event) => {
-    const prisma = new PrismaClient();
 
     const data = await event.request.formData();
     let username = data.get('username');
@@ -62,7 +57,6 @@ export const actions: Actions = {
 
     // check if username and password are not undefined
     if(!username || !password) {
-      prisma.$disconnect();
       return invalid(400, { username, password, missing: true });
     }
 
@@ -78,7 +72,6 @@ export const actions: Actions = {
     });
 
     if(user) {
-      prisma.$disconnect();
       return invalid(400, { username, taken: true });
     }
 
@@ -93,8 +86,6 @@ export const actions: Actions = {
     });
 
     console.log("User created");
-
-    await prisma.$disconnect();
 
     return { success: true }
   }

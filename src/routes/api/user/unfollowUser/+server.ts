@@ -1,6 +1,6 @@
 import { error, json } from '@sveltejs/kit';
 import type { RequestHandler } from './$types';
-import { PrismaClient } from '@prisma/client';
+import { prisma } from '$lib/utils/prisma';
 
 // add new user to follow
 export const PATCH = (async ({ request }) => {
@@ -10,8 +10,6 @@ export const PATCH = (async ({ request }) => {
     if(!username || !follow_id) {
         throw error(403, { message: "Wrong body" });
     }
-
-    const prisma = new PrismaClient();
 
     const user = await prisma.user.update({
         where: {
@@ -25,8 +23,6 @@ export const PATCH = (async ({ request }) => {
             }
         }
     });
-
-    await prisma.$disconnect();
 
     if(!user) {
         throw error(403, { message: "User not found" });

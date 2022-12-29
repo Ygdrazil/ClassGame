@@ -1,6 +1,5 @@
 import { error, json } from '@sveltejs/kit';
 import type { RequestHandler } from './$types';
-import { PrismaClient } from '@prisma/client';
 
 export const GET = (async ({ cookies }) => {
 	// deleting cookie by setting a past date

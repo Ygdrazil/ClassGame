@@ -1,13 +1,11 @@
 import { error } from '@sveltejs/kit';
 import type { PageServerLoad } from './$types';
-import { PrismaClient } from '@prisma/client';
+import { prisma } from '$lib/utils/prisma';
 
 export const load = (async ({ fetch, params }) => {
 	const slug = params.username;
 
 	let json_data: { [x: string]: any } = {};
-
-	const prisma = new PrismaClient();
 
 	const user = prisma.user.findUnique({
 		where: {
@@ -23,8 +21,6 @@ export const load = (async ({ fetch, params }) => {
 			}
 		}
 	});
-
-	await prisma.$disconnect();
 
 	if (!user) {
 		throw error(404, '/game/subjects');
