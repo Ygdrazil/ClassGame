@@ -51,7 +51,7 @@ async function main() {
 			name: 'Le mathématicien intermédiaire',
 			desc: 'Donnée au mathématicien intermédiaire',
 			subjectId: math.id,
-			minPoints: 1
+			minPoints: 0
 		}
 	});
 
@@ -73,7 +73,7 @@ async function main() {
 			name: 'La réponse à la vie',
 			desc: "En commencant l'étude du langage originel, vous sentez toutes les connaissances du monde vous envahir !",
 			subjectId: smalltalk.id,
-			minPoints: 1
+			minPoints: 0
 		}
 	});
 }
