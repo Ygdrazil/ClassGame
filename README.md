@@ -6,6 +6,9 @@ If you want to run it on your machine, here's what you need to do :
 ```bash
 npm install
 
+// you should modify the values contained in .env
+cp .env.example .env
+
 npx prisma migrate dev
 npx prisma db seed
 
